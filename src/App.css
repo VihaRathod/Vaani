@@ -1,0 +1,238 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Frank+Ruhl+Libre:wght@300..900&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Frank+Ruhl+Libre:wght@300..900&family=Yeseva+One&display=swap');
+
+
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Apply background to full page */
+html, body {
+  height: 100%;
+  background-color: #e9e3d6;
+}
+.container-fluid{
+  background-color: #e9e3d6;
+  width: 100%;
+  padding-right: var(--bs-gutter-x, 0.75rem);
+  padding-left: var(--bs-gutter-x, 0.75rem);
+  margin-right: auto;
+  margin-left: auto;
+  margin-bottom: -24px;
+}
+.MainPage{
+  margin: 0px;
+  padding:0px;
+  clip-path: ellipse(70% 60% at 50% 40%);
+}
+.MainHeading{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-family: Yeseva One;
+  color:#456057;
+  
+}
+.MainParagraph{
+  position: absolute;
+  top: 61%;
+  left: 52%;
+  transform: translate(-50%, -50%);
+  font-family: Frank Ruhl Libre;
+  color:#5a6e6c;
+  font-size: large;
+}
+.MainButton{
+  position: absolute;
+  top: 71%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-family: Frank Ruhl Libre;
+  color:#e9e3d6;
+  font-size: large;
+  background-color: #5a6e6c;
+  height: 50px;
+  width: 170px;
+  border: none;
+  border-radius: 10px;
+  
+}
+.GoalContainer {
+  margin-top: 100px;
+  background-color:#e9e3d6;
+  display: grid;
+  grid-template-columns: 1.5fr 1fr; /* More space for text, less for image */
+  align-items: center;
+  gap: 40px;
+  padding: 50px 10%; /* Wider horizontal padding */
+  max-width: 1400px; /* Set a maximum width */
+  margin-left: auto; /* Center the container */
+  margin-right: auto;
+  margin-bottom: 60px;
+}
+
+.Goals {
+  margin-left: 0px; /* Increased left margin */
+  max-width: 800px; /* Extended text width */
+  color: #456057;
+}
+
+.GirlImageContainer {
+  display: flex;
+  justify-content: flex-end;
+  padding-right: 0; /* Remove right padding */
+  margin-right: -50px; /* Negative margin to push further right */
+}
+
+.GirlImage {
+  height: 500px;
+  width: 500px;
+  object-fit: cover;
+  border-radius: 50%;
+}
+@media (max-width: 1200px) {
+  .GoalContainer {
+    grid-template-columns: 1.2fr 1fr;
+    padding: 50px 5%;
+  }
+}
+
+@media (max-width: 992px) {
+  .GoalContainer {
+    grid-template-columns: 1fr;
+  }
+  .GirlImageContainer {
+    justify-content: center;
+    margin-right: 0;
+    margin-top: 40px;
+  }
+  .Goals {
+    margin-left: 0px;
+    margin-right: auto;
+    max-width: 90%;
+  }
+}
+
+.HeadingOfFeatures{
+  margin-top: 20px;
+  color: #456057;
+  font-family:  Yeseva One;
+  text-align: center;
+}
+.CardSectionWrapper {
+  position: relative;
+  height: auto;
+  padding: 100px 0;
+  background-color: #e9e3d6;
+  overflow: hidden;
+}
+
+.BackgroundImage {
+  background-image: url('./images/backgroundIMG.png');
+  background-size: cover;
+  background-position: center;
+  filter: blur(10px);
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 0;
+}
+
+.ContentOverlay {
+  position: relative;
+  z-index: 1;
+  text-align: center;
+  padding: 0 10%;
+}
+
+.HeadingOfFeatures {
+  font-family: Yeseva One;
+  font-size: 45px;
+  color: #456057;
+  margin-bottom: 40px;
+
+}
+
+.CardGrid {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 30px;
+}
+
+
+
+.ImportanceContainer {
+  background-color: #e9e3d6;
+  display: grid;
+  grid-template-columns: 1fr 2fr; /* Left: Image, Right: Text */
+  align-items: center;
+  padding: 50px 10%;
+  gap: 40px;
+  max-width: 1400px;
+  margin-top: 100px;
+  margin: 0 auto;
+}
+
+.ImageContainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.GujratImage {
+  height: 450px;
+  width: 450px;
+  object-fit: cover;
+  border-radius: 50%;
+}
+
+.ImportanceContent {
+  color: #456057;
+  font-family:Frank Ruhl Libre ;
+  margin-left: 60px;
+}
+
+/* Responsive Layout */
+@media (max-width: 992px) {
+  .ImportanceContainer {
+    grid-template-columns: 1fr;
+    text-align: center;
+    margin-top: 100px;
+  }
+
+  .ImageContainer {
+    margin-bottom: 30px;
+  }
+
+  .GujratImage {
+    height: 180px;
+    width: 180px;
+  }
+
+  .ImportanceContent {
+    padding: 0 20px;
+  }
+}
+
+
+
+
+
+
+.nav-pills .nav-link.active {
+  background-color: #5a6e6c;
+}
+
+/* Optional: Change hover color for all nav-links */
+.nav-pills .nav-link:hover {
+  color: #5a6e6c;
+}
