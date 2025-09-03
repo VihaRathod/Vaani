@@ -1,0 +1,297 @@
+@import url('https://fonts.googleapis.com/css2?family=Frank+Ruhl+Libre:wght@300..900&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Frank+Ruhl+Libre:wght@300..900&family=Yeseva+One&display=swap');
+
+
+.streak-container {
+  min-height: 100vh;
+  background-color:#53685f;
+ 
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-family: sans-serif;
+  text-align: center;
+  padding: 20px;
+}
+
+.streak-username {
+  font-size: 1.5rem;
+  font-weight: 600;
+color: #eae4d7;
+font-family: "Yeseva One", serif;
+font-size: 40px;
+
+}
+
+.streak-email {
+  color: #eae4d7;
+  font-size: 0.875rem;
+  margin-top: 10px;
+  font-family: FrankRuhlLibre;
+  font-size: 17px;
+  margin-bottom: 0px;
+}
+
+.streak-flame-wrapper {
+  position: relative;
+  margin-top: -25px; /* pull it up */
+  z-index: 2;
+}
+
+
+.streak-flame {
+  font-size: 150px;
+  margin-bottom: 0px;
+  /* Gradient effect   #c3904d*/
+  border: #40554d;
+  display: inline-block;
+}
+.custom-flame{
+      color:  #c0946b;
+  /*filter: drop-shadow(0 0 8px #ebebeb);*/
+}
+.streak-count {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -45%);
+  font-size: 2rem;
+  font-weight: bold;
+  color: #a0522d;
+background: linear-gradient(to top, #556a62, #eae4d7);
+
+}
+
+.streak-box {
+  background-color: #d7d1c4;
+  min-height: 220px;
+  min-width: 480px;
+  border-radius: 1rem;
+  bottom:60px;
+  width: 300px;
+  position: relative;
+  padding-top: 45px; /* add space under overlapping flame */
+  z-index: 1;
+}
+
+
+.streak-top {
+  display: flex;
+  align-items: center;
+}
+
+.streak-title {
+  font-weight: 600;
+  font-size: 25px;
+  margin-left: 130px;
+  margin-top: 10px;
+  font-family: "Yeseva One", serif;
+  color:#556a62;
+}
+
+
+
+.streak-days {
+  display: flex;
+  gap: 18px;
+  margin-top: 10px;
+  margin-left: 70px;
+  margin-bottom: 20px;
+}
+
+.day-wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-family: FrankRuhlLibre;
+  color: #556a62;
+}
+
+.day-circle {
+  width: 32px;
+  height: 32px;
+  border: 2px solid #a6afab;
+  border-radius: 50%;
+  background-color: transparent;
+  margin-bottom: 4px;
+}
+
+.active-day {
+  border-color: #a6afab;
+  background-color: #556a62;
+}
+
+
+.streak-day {
+  width: 32px;
+  height: 32px;
+  border: 2px solid #a6afab;
+  border-radius: 50px;
+  line-height: 32px;
+  font-size: 0.875rem;
+  
+}
+
+.active-day {
+  border-color: #556a62;
+  color: #556a62;
+  font-weight: bold;
+}
+
+.streak-footer {
+  display: flex;
+  gap: 15px;
+  margin-top: 1.5rem;
+  color: #555;
+  margin-left: 650px;
+
+}
+
+.streak-icon-group {
+  display: flex;
+  gap: 0.3rem;
+  font-size: 1rem;
+  color:#d7d1c4 ;
+}
+
+
+
+
+
+/*Below streak part */
+.settings-wrapper {
+  
+  color:#3d514a;
+  width: 480px;
+  font-family: FrankRuhlLibre;
+  font-weight: 400px;
+}
+
+.account-heading {
+  font-size: 24px;
+  font-weight: bold;
+  color: #d7d1c4;
+  margin-right: 380px;
+  margin-bottom: 10px;
+}
+.subscription-heading{
+    font-size: 24px;
+  font-weight: bold;
+  color: #d7d1c4;
+  margin-right: 340px;
+  margin-bottom: 10px;
+  margin-top: 20px;
+}
+.settings-box {
+  border: 1px solid #e0c9a1;
+  border-radius: 16px;
+  background-color:#d7d1c4;
+  overflow: hidden;
+}
+
+.settings-row {
+  display: flex;
+  align-items: center;
+  padding: 14px;
+  border-bottom: 1px solid #f3e8d2;
+  position: relative;
+}
+
+.settings-row:last-child {
+  border-bottom: none;
+}
+
+.settings-icon {
+  margin-right: 28px;
+  font-size: 20px;
+  color: #556a62;
+
+}
+
+
+.settings-info{
+    flex-grow: 1;
+  font-size: 19px;
+  margin-right: 210px;
+}
+.settings-payment-info{
+      flex-grow: 1;
+  font-size: 19px;
+  margin-right: 150px;
+}
+
+.settings-arrow {
+  background-color: #d7d1c4;
+  padding: 8px;
+  border-radius: 50%;
+  color: #556a62;
+  font-size:30px;
+ 
+  cursor: pointer;
+ 
+}
+.settings-arrow:active{
+  transform: translateY(2px);
+ 
+}
+
+.settings-upgrade-badge {
+  background-color: #556a62;
+  color: white;
+  font-size: 12px;
+  font-weight: bold;
+  border-radius: 6px;
+  padding: 4px 10px;
+  margin-right: 10px;
+}
+
+.learningProgress-heading{
+      font-size: 24px;
+  font-weight: bold;
+  color: #d7d1c4;
+  margin-right: 350px;
+  margin-bottom: 10px;
+  margin-top: 20px;
+  white-space: nowrap; 
+}
+.certi-icon{
+    
+  font-size: 26px;
+  color: #556a62;
+}
+.settings-download-info{
+   flex-grow: 1;
+  font-size: 20px;
+  margin-right: 250px;
+   flex-direction: column;
+  display: flex; 
+} 
+
+
+.logout-btn{
+  margin-top: 35px;
+  background-color:#556a62;
+  color:#d7d1c4;
+  height: 55px;
+  width: 480px;
+border: 3px solid #d7d1c4;
+  border-radius: 20px;
+  font-weight: 600;
+  cursor: pointer;
+  font-family: FrankRuhlLibre;
+  font-size: 18px;
+  transition: background-color 0.4s ease, color 0.4s ease, transform 0.1s ease, box-shadow 0.1s ease;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+  margin-bottom: 70px;
+}
+
+.logout-btn:hover {
+  background-color: #d7d1c4;
+  color:#40554d
+}
+.logout-btn:active{
+      transform: translateY(2px);
+  box-shadow: 0 2px 3px rgba(0, 0, 0, 0.2);
+}

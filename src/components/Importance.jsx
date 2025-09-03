@@ -1,4 +1,4 @@
-import Gujrat from './images/Gujrat.png';
+import Gujrat from '../images/Gujrat.png';
 
 function Importance() {
   return (

@@ -15,10 +15,12 @@ const Card = ({ icon, title, description }) => {
   );
 };export default Card;
 
+
 const StyledWrapper = styled.div`
   section.card {
-    background-color: #5a6e6c; /* card background */
-    color: #e9e3d6; /* icon and text default color */
+    position: relative;
+    background-color: #5a6e6c;
+    color: #e9e3d6;
     width: 250px;
     height: 250px;
     border-radius: 15px;
@@ -27,10 +29,11 @@ const StyledWrapper = styled.div`
     justify-content: center;
     overflow: hidden;
     perspective: 1000px;
-    transition: all 0.8s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+    transition: transform 0.8s cubic-bezier(0.175, 0.885, 0.32, 1.275);
     margin-left: 50px;
-    margin-top:30px;
-    margin-botton:20px
+    margin-top: 30px;
+    margin-bottom: 20px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
   }
 
   .card:hover {
@@ -39,8 +42,6 @@ const StyledWrapper = styled.div`
   }
 
   .card__content {
-    color: #e9e3d6;
-    background-color: #5a6e6c;
     position: absolute;
     top: 0;
     left: 0;
@@ -48,9 +49,16 @@ const StyledWrapper = styled.div`
     width: 100%;
     height: 100%;
     box-sizing: border-box;
+    background-color: #5a6e6c;
+    color: #e9e3d6;
     transform: rotateX(-90deg);
     transform-origin: bottom;
-    transition: all 0.6s ease;
+    transition: transform 0.6s ease-in-out;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
   }
 
   .card:hover .card__content {
@@ -58,23 +66,26 @@ const StyledWrapper = styled.div`
   }
 
   .card__title {
-   font-family: Yeseva One;
-    font-size: 20px;
+    font-family: 'Yeseva One', cursive;
+    font-size: 23px;
     font-weight: 700;
     color: #e9e3d6;
     margin: 0;
   }
 
   .card__description {
-    
     margin-top: 10px;
-    font-size: 14px;
+    font-size: 16px;
     line-height: 1.4;
     color: #e9e3d6;
-    font-family: Frank Ruhl Libre;
+    font-family: 'Frank Ruhl Libre', serif;
+  }
+
+  .card svg {
+    transition: transform 0.5s ease;
   }
 
   .card:hover svg {
-    scale: 0;
+    transform: scale(0);
   }
 `;

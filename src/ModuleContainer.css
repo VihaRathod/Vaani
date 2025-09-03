@@ -1,0 +1,155 @@
+@import url('https://fonts.googleapis.com/css2?family=Frank+Ruhl+Libre:wght@300..900&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Frank+Ruhl+Libre:wght@300..900&family=Yeseva+One&display=swap');
+
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;  
+  
+
+}
+
+
+.mod-page-title {
+  font-family: "Yeseva One", serif;
+  color: #688078;
+  font-size: 45px;
+  margin: 0 0 10px 0;
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+}
+
+/* Icons now positioned to top-right under title */
+.module-logo {
+ /* Adjust depending on spacing */
+  display: flex;
+  gap: 10px;
+  align-items: right;
+  margin-top: 20px;
+  margin-left: 650px;
+  display: flex;
+  
+}
+
+.icon-item {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+}
+
+.trophy-logo,
+.streak-logo {
+  font-size: 24px;
+  color:#5d736b;
+}
+
+.icon-count {
+  font-size: 16px;
+  font-weight: bold;
+  color: #333;
+}
+.modules-page {
+  background-color: #eae4d7;
+  min-height: 100vh;
+  padding-left: 20px;
+  padding-right: 20px;
+  padding-top: 20px;
+  padding-bottom: 60px;
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  align-items: center; /* Center modules horizontally */
+    
+}
+
+.module-container {
+  border: 3px #ebe4d7;
+  border-radius: 20px;
+  background-color:#6a8178;
+  padding: 24px;
+  position: relative;
+  box-shadow: 0 4px 12px #7a8f87;
+ width:100%;
+  max-width: 700px; /* You can increase this as needed */
+ height: 170px;
+  overflow: hidden;
+  min-height: 100px;
+  
+   
+}
+
+.module-container{
+  background: radial-gradient(circle at center, #687e75,#496158);
+}
+
+.chapter-label {
+  background-color: #ebe4d7;
+  display: inline-block;
+  padding: 5px 12px;
+  border-radius: 10px;
+  font-weight: bold;
+  font-size: 12px;
+  margin-bottom: 10px;
+  font-family: Yeseva One;
+  color:#5d736b
+
+}
+
+.module-title {
+  font-size: 21px;
+  font-weight: bold;
+  margin-bottom: 7px;
+  color:#ebe4d7;
+  font-family: Yeseva One;
+}
+
+.lesson-info {
+  font-size: 16px;
+  margin-bottom: 12px;
+  color:#ebe4d7;
+  font-family: FrankRuhlLibre;
+
+}
+
+.progress-bar {
+  background-color: #cfcfc3;
+  height: 8px;
+  width: 100%;
+  border-radius: 8px;
+  
+  overflow: hidden;
+  color:#ebe4d7;
+  
+}
+
+.progress-fill {
+  height: 100%;
+  background-color: #97a295;
+  transition: width 0.3s ease;
+}
+
+.action-button {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  background-color: #89968a;
+  color: white;
+  border: none;
+  border-radius: 50%;
+  width: 42px;
+  height: 42px;
+  font-size: 20px;
+  cursor: pointer;
+  transition: transform 0.1s ease, box-shadow 0.1s ease;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+}
+
+
+.action-button:hover {
+  background-color: #788576;
+}
+.action-button:active{
+     transform: translateY(2px);
+  box-shadow: 0 2px 3px rgba(0, 0, 0, 0.2);
+}

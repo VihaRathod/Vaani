@@ -1,6 +1,7 @@
-import BackgroundIMG from './images/image.png'
+import BackgroundIMG from '../images/image.png'
 import React from 'react';
 import styled from 'styled-components';
+import { Link } from 'react-router-dom';
 
 const CtaSection = () => {
   return (
@@ -15,7 +16,9 @@ const CtaSection = () => {
           </p>
           <p>Start your journey toward connection, understanding, and empowerment today.</p>
         </div>
+            <Link to="/signup">
         <button className="CtaSection-button">Start Learning</button>
+        </Link>
       </div>
     </StyledWrapper>
   );

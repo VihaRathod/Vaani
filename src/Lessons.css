@@ -1,0 +1,236 @@
+/* Lessons.css */
+@import url('https://fonts.googleapis.com/css2?family=Frank+Ruhl+Libre:wght@300..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Frank+Ruhl+Libre:wght@300..900&family=Yeseva+One&display=swap');
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+.lessons-container {
+  min-height: 100vh;
+  background-color: #d5cfc4;
+  font-family: "Yeseva One", serif;
+}
+
+/* Header Styles */
+.header {
+  background-color: #6a7e77;
+  padding: 15px 20px;
+  border-radius: 0 0 1.5rem 1.5rem;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
+}
+
+.header-nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 1.5rem;
+}
+
+.back-arrow {
+  font-size: 1.5rem;
+  color: #d5cfc4;
+  cursor: pointer;
+}
+
+.chapter-badge {
+  background: rgba(255, 255, 255, 0.5);
+  padding: 0.5rem 1rem;
+  border-radius: 9999px;
+  backdrop-filter: blur(10px);
+}
+
+.chapter-badge span {
+  font-size: 0.875rem;
+  font-weight: 500;
+  color: #374151;
+}
+
+.spacer {
+  width: 1.5rem;
+}
+
+.header-content {
+  text-align: center;
+}
+
+.header-content h1 {
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: #d5cfc4;
+  margin-bottom: 0.5rem;
+}
+
+.header-content p {
+  color: #d5cfc4;
+  font-size: 1rem;
+}
+
+/* Lessons List Styles */
+.lessons-list {
+  padding: 2rem 1.5rem;
+  max-width: 28rem;
+  margin: 0 auto;
+}
+
+.lesson-item {
+  position: relative;
+  margin-bottom: 1.5rem;
+}
+
+.lesson-row {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+/* Lesson Card Styles - FIXED FOR CONSISTENCY */
+.lesson-card {
+  flex: 1;
+  padding: 20px;
+  background: rgba(255, 255, 255, 0.5);
+  border-radius: 1rem;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  border: 1px solid #869790;
+  /* FIXED: Add consistent height */
+  min-height: 120px;
+  display: flex;
+  align-items: center;
+}
+
+.lesson-card.current-lesson {
+  border: 3px solid #6d817a;
+}
+
+/* FIXED: Better flex layout for consistent alignment */
+.lesson-content1 {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  color: #6d817a;
+}
+
+/* FIXED: Better text container with consistent spacing */
+.lesson-info {
+  flex: 1;
+  margin-right: 15px;
+}
+
+.lesson-info h3 {
+  font-weight: 600;
+  color: #5b6b65;
+  font-size: 20px;
+  margin: 0 0 8px 0;
+  line-height: 1.2;
+}
+
+.lesson-info p {
+  font-size: 16px;
+  color: #5b6b65;
+  margin: 0;
+  line-height: 1.4;
+}
+
+/* Play Button Styles - FIXED FOR PERFECT CIRCLE */
+.play-button1 {
+  /* FIXED: Ensure perfect circle with equal width and height */
+  width: 50px;
+  height: 50px;
+  min-width: 50px;
+  min-height: 50px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  /* FIXED: Prevent shrinking in flex container */
+  flex-shrink: 0;
+}
+
+.play-button1.completed {
+  background: #63746e;
+  color: #eae4d7;
+}
+
+.play-button1.current {
+  background: #7e948d;
+  color: #eae4d7;
+}
+
+.play-button1.upcoming {
+  background: #7e948d;
+  color: #eae4d7;
+}
+
+.play-button1:hover {
+  transform: scale(1.05);
+}
+
+/* Continue Button Styles */
+.continue-section {
+  padding: 0 1.5rem 2rem;
+}
+
+.continue-button {
+  width: 100%;
+  max-width: 28rem;
+  margin: 0 auto;
+  display: block;
+  background: linear-gradient(to right, #505d58, #5c716a);
+  color: #eae4d7;
+  font-weight: 600;
+  padding: 1rem 1.5rem;
+  border-radius: 1rem;
+  border: none;
+  cursor: pointer;
+  font-size: 1rem;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  transition: all 1s ease;
+}
+
+.continue-button:hover {
+  background: linear-gradient(to left, #505d58, #5c716a);
+  transform: translateY(-1px);
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
+}
+
+/* Responsive Design */
+@media (max-width: 640px) {
+  .header {
+    padding: 1.5rem 1rem;
+  }
+  
+  .lessons-list {
+    padding: 1.5rem 1rem;
+  }
+  
+  .continue-section {
+    padding: 0 1rem 1.5rem;
+  }
+  
+  /* FIXED: Responsive adjustments for smaller screens */
+  .lesson-card {
+    min-height: 100px;
+    padding: 15px;
+  }
+  
+  .lesson-info h3 {
+    font-size: 18px;
+  }
+  
+  .lesson-info p {
+    font-size: 14px;
+  }
+  
+  .play-button1 {
+    width: 45px;
+    height: 45px;
+    min-width: 45px;
+    min-height: 45px;
+    font-size: 0.9rem;
+  }
+}

@@ -28,7 +28,7 @@ html, body {
 .MainPage{
   margin: 0px;
   padding:0px;
-  clip-path: ellipse(70% 60% at 50% 40%);
+  clip-path: ellipse(77% 60% at 50% 40%);
 }
 .MainHeading{
   position: absolute;
@@ -48,21 +48,36 @@ html, body {
   color:#5a6e6c;
   font-size: large;
 }
-.MainButton{
+.MainButton {
   position: absolute;
   top: 71%;
   left: 50%;
   transform: translate(-50%, -50%);
-  font-family: Frank Ruhl Libre;
-  color:#e9e3d6;
+  
+  font-family: 'Frank Ruhl Libre', serif;
   font-size: large;
+  font-weight: 300;
+  
+  color: #f4f3ef;
   background-color: #5a6e6c;
+  
   height: 50px;
   width: 170px;
   border: none;
   border-radius: 10px;
+  cursor: pointer;
+  transition: background-color 0.3s ease, color 0.3s ease;
+
   
 }
+
+/* Hover and Click (Active) State */
+.MainButton:hover,
+.MainButton:active {
+  background-color: #6f827f; /* Slightly lighter green */
+  color: #ffffff;
+}
+
 .GoalContainer {
   margin-top: 100px;
   background-color:#e9e3d6;
@@ -224,10 +239,6 @@ html, body {
 }
 
 
-
-
-
-
 .nav-pills .nav-link.active {
   background-color: #5a6e6c;
 }
@@ -236,3 +247,6 @@ html, body {
 .nav-pills .nav-link:hover {
   color: #5a6e6c;
 }
+
+
+

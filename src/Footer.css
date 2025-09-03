@@ -1,0 +1,54 @@
+.footer a {
+  text-decoration: none; /* Removes the blue underline */
+}
+.footer {
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  background-color: #dfe0d3;
+  /*d2d3c5*/
+  border-top: 1px solid #eae7dc;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 6px 0;
+  z-index: 999;
+}
+
+.footer-item {
+  display: flex;
+  flex-direction: row;
+  gap:40px;
+  margin-left: 450px;
+  width: 100%;
+  max-width: 800px; /* Adjust as needed */
+}
+
+.footer-icon-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 0 10px; /* Left and right spacing */
+  gap: 1px;
+}
+
+.footer-icon {
+  font-size: 27px;
+  color: #5a6e6c;
+
+}
+
+.footer-icon-container span {
+  font-size: 12px;
+  color: #5a6e6c;
+}
+
+/* Active state */
+.footer-icon-container.active {
+  color: #c65c1e;
+}
+
+.footer-icon-container.active .footer-icon,
+.footer-icon-container.active span {
+  color: #c65c1e;
+}

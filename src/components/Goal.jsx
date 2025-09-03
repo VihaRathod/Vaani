@@ -1,5 +1,5 @@
 import React from 'react'
-import GirlLearning from './images/GirlLearning.png';
+import GirlLearning from '../images/GirlLearning.png';
 
 
 function Goal(){
